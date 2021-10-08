@@ -1,0 +1,149 @@
+/* pages/Address/Address.wxss */
+.bodybgc{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(235, 228, 228); */
+    padding-top: 20rpx;
+    padding-bottom: 20rpx;
+    position: relative;
+}
+
+.bodybgc .ul{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(235, 228, 228);
+}
+
+.bodybgc .ul .li{
+    width: 100%;
+    padding: 20rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10rpx;
+    border: 1px solid #ccc;
+    color: rgb(43, 39, 39);
+    margin-bottom: 10rpx;
+}
+
+.bodybgc .ul .li .fl{
+    width: 90%;
+}
+
+.bodybgc .ul .li .fl .p{
+    display: flex;
+    margin-bottom: 16rpx;
+}
+
+.bodybgc .ul .li .fl .p3 {
+    width: 100%;
+    display: inline-block;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.bodybgc .ul .li .fl .p3 .icon-morendizhi{
+    display: inline-block;
+    font-size: 30rpx;
+    color: #FC5407;
+    
+}
+
+.bodybgc .ul .li .fl .p3 .p{
+    width: 60%;
+    /* height: ; */
+    display: inline-block;
+    display: flex;
+}
+
+.bodybgc .ul .li .rl{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bodybgc .ul .li .rl view:nth-of-type(1){
+    font-size: 52rpx;
+    margin-bottom: 40rpx;
+    color: rgb(252, 84, 7);
+}
+
+.bodybgc .ul .li .rl view{
+    font-size: 50rpx;
+    color: #ccc;
+}
+
+.bodybgc .addcie{
+    width: 90%;
+    height: 75rpx;
+    line-height: 75rpx;
+    text-align: center;
+    background-color: #8888AA;
+    margin: 10rpx auto;
+    color: #fff;
+    margin-top: 30rpx;
+}
+
+.bodybgc .ciugai{
+    width: 94%;
+    height: 550rpx;
+    /* background-color: rgb(109, 94, 94); */
+    position: absolute;
+    top:610rpx;
+    left: 0rpx;
+    padding: 20rpx;
+    color: rgb(141, 137, 132);
+    border-top-left-radius: 60rpx;
+    border-top-right-radius: 60rpx;
+    border-top: 4px solid #8888AA;
+    
+}
+
+.bodybgc .toptops{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+
+.ciugai{
+    width: 100%;
+    background-color: #fff;
+}
+
+.ciugai .tuniu{
+    width: 100%;
+    height: 80rpx;
+    margin-bottom: 10rpx;
+    font-size: 30rpx;
+    color: rgb(141, 137, 132);
+    display: flex;
+    align-content: center;
+    background-color: #fff;
+}
+
+.ciugai .tuniu input{
+    display: inline-block;
+    width: 70%;
+    height: 60rpx;
+    border-radius: 10rpx;
+    background-color: #fff;
+}
+
+.ciugai .buttom{
+    width: 300rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    margin:  0 auto;
+    text-align: center;
+    background-color: #8888AA;
+    border-radius: 40rpx;
+    color: rgb(240, 242, 245);
+    font-weight: bold;  
+}
+
+.ciugai .section{
+    margin-bottom: 20rpx;
+}

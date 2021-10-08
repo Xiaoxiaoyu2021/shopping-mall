@@ -1,0 +1,98 @@
+/* pages/sousuo/sousuo.wxss */
+.pagest {
+    width: 90%;
+    display: flex;
+    margin: 20rpx auto;
+}
+
+.pagest input {
+    width: 100%;
+    /* height: 40rpx; */
+    padding: 20rpx 40rpx;
+    /* margin: 40rpx; */
+    border: 1px solid #cccccc;
+    border-radius: 60rpx;
+    display: inline-block;
+}
+
+.pagest view {
+    display: inline-block;
+    width: 10%;
+    font-size: 50rpx;
+    color: #221f1f;
+    padding: 20rpx 20rpx;
+
+}
+
+.ul {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.ul .li {
+    width: 80%;
+    display: flex;
+    padding: 20rpx;
+    display: inline-block;
+    
+}
+
+.ul .li .icon-sousuo {
+    display: inline-block;
+    font-size: 40rpx;
+    margin-right: 10rpx;
+    vertical-align: super;
+}
+
+.ul .li .datall {
+    width: 90%;
+    display: inline-block;
+    font-size: 40rpx;
+    color: rgb(75, 44, 44);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sousuoall{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sousuoall view{
+    height: 30rpx;
+    line-height: 30rpx;
+    padding: 15rpx;
+    margin: 10rpx;
+    background-color: #fff;
+    color: rgb(92, 83, 83);
+    font-size: 30rpx;
+    border-radius: 24rpx;
+    text-align: center;
+}
+.sousuoall view:nth-of-type(1){
+    background-color: #F5F6F7;
+    font-weight: bold;
+    margin-right: 0;
+}
+.sousojiu{
+    width: 90%;
+    margin: 0 auto;
+}
+.sousojiu .li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20rpx;
+    position: relative;
+}
+.sousojiu .li view:nth-of-type(1){
+    margin-right: 10rpx;
+}
+.sousojiu .li view:nth-of-type(3){
+    position: absolute;
+    right: 50rpx;
+    top: 18rpx;
+    
+}

@@ -1,0 +1,58 @@
+<!--pages/Address/Address.wxml-->
+<view class="bodybgc">
+    <view class="ul">
+        <view class="li" wx:for="{{arrays}}" wx:key="*this">
+            <view class="fl">
+                <view class="p">
+                    收件人：<view>{{item.name}}</view>
+                </view>
+
+                <view class="p">
+                    电话：<view>{{item.dainh}}</view>
+                </view>
+                <view class="p">
+                    地址：<view>{{item.dizhi}}</view>
+                </view>
+                <view class="p3">
+                    <van-checkbox v-model="checked" checked-color="#ee0a24">
+                    <!-- <checkbox bindtap="checkde"></checkbox>  -->
+                    <!-- <view class="toptops" ></view> -->
+                    <view class="iconfont icon-morendizhi" >
+                            设置为默认地址
+                        </view>
+                    </van-checkbox>
+
+                </view>
+            </view>
+            <view class="rl">
+                <view class="iconfont icon-xiugai"  bindtap="serove" data-id="{{item.id}}"></view>
+                <view class="iconfont icon-lajitong" catchtap="remove" data-id="{{item.id}}"></view>
+            </view>
+        </view>
+    </view>
+    <view class="addcie" bindtap="isxy">加地址</view>
+    <view class="ciugai" wx:if="{{isxys}}">
+        <view class="tuniu">
+            收件人：<input type="text"  model:value="{{value}}" />
+        </view>
+        <view class="tuniu">
+            地址：<input type="text" model:value="{{dizival}}"/>
+        </view>
+        <view class="tuniu">
+            电话：<input type="text"  model:value="{{dainhval}}"/>
+        </view>
+        <view class="section">
+            <view class="section__title">省市区选择器</view>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <view class="picker">
+                    当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+                </view>
+            </picker>
+        </view>
+        <view class="tuniu">
+            详细地址：<input type="text"  model:value="{{xaingsival}}"/>
+        </view>
+        <view class="buttom" wx:if="{{!isUpdata}}" bindtap="adddizi">确认添加</view>
+        <view class="buttom"  wx:if="{{isUpdata}}" bindtap="updata">确认修改</view>
+    </view>
+</view>

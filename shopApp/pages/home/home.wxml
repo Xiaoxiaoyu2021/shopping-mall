@@ -1,0 +1,57 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索框 -->
+<view class="topinp">
+    <navigator class="topinps" url="/pages/sousuo/sousuo">
+        <view class="topinpsousuo"><text class="iconfont icon-sousuo"></text></view>
+        <input type="text" placeholder="搜索" />
+    </navigator>
+</view>
+
+<!-- 轮播图 -->
+<view class="banner">
+    <swiper indicator-dots="true" indicator-color="white" indicator-active-color="skyblue" autoplay>
+        <!-- wx:for 默认里面有item对象 和index下标-->
+        <block wx:for="{{imgs}}" wx:key="*this">
+            <swiper-item>
+                <image mode="widthFix" src="{{item.image_src}}"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<!-- 分类功能 -->
+<view class="category">
+    <view class="item" wx:for="{{iconArray}}" wx:key="*this" catchtap="goCategory" data-index="{{index}}">
+        <image src="{{item.url}}"></image>
+        <text>{{item.text}}</text>
+    </view>
+</view>
+
+<!-- 商品列表 -->
+<view class="commonTitle">
+    <text>商品列表</text>
+</view>
+<view class="goodsli">
+    <view class="goodslist" wx:for="{{goodsList}}" wx:key="*this">
+        <view class="left">
+            <image src="{{item.goodsImage}}"></image>
+        </view>
+        <navigator class="right" url="/pages/details/details?id={{item.id}}" hover-class="none">
+            <view>
+                <view class="goods_name">
+                    <text>{{item.goodsName}}</text>
+                </view>
+                <view class="goods_address">
+                    <text>{{item.goodsAddress}}</text>
+                </view>
+                <view class="goods_price">
+                    <text>￥{{item.goodsPrice}}</text>
+                    <text class="goods_price2">￥{{item.goodsPrice-217}}</text>
+                </view>
+                <view class="car">
+                    <image src="/images/car.png"></image>
+                </view>
+            </view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/sousuo/sousuo.wxml-->
+<view class="pagest">
+    <input class="weui-input" bindchange="bindKeyInput" bindinput="userInput" auto-focus placeholder="衣服" model:value="{{value}}" />
+    <view class="iconfont icon-sousuo"></view>
+</view>
+<view class="ul">
+
+    <view class="li" wx:for="{{arrays}}" wx:key="*this">
+        <navigator url="/pages/details/details?id={{item.goods_id}}">
+            <view class="iconfont icon-sousuo"></view>
+            <view class="datall">{{item.goods_name}}</view>
+        </navigator>
+    </view>
+
+</view>
+<view class="sousuoall">
+    <view>推荐搜索：</view>
+    <view wx:for="{{sousuoall}}" wx:key="*this">{{item}}</view>
+
+</view>
+<view class="sousojiu">
+    <view class="li">
+        <view class="iconfont icon-shijian"></view>
+        <view>短袖</view>
+        <view class="iconfont icon-chushaixuanxiang"></view>
+    </view>
+</view>

@@ -1,0 +1,32 @@
+<!--pages/category/category.wxml-->
+
+<!-- 左侧分类 -->
+<!-- 1. 触发事件 bindtap 数据传参在data-*中设置 -->
+<scroll-view class="categoryItem" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="item">
+        <view 
+        wx:for="{{content}}" 
+        wx:key="*this"
+        class="{{ index == num ? 'con' : ''}}" 
+        data-id="{{index}}"
+        bindtap="setIndex"
+        >
+            {{item.cat_name}}
+        </view>
+    </view>
+</scroll-view>
+
+<!-- 右侧内容 -->
+<scroll-view class="contentItem" scroll-y="true" style="height: {{scrollHeight}}px">
+    <view class="content" wx:for="{{content[num].children}}" wx:key="*this">
+        <view class="content2">{{item.cat_name}}</view>
+        <view class="ul">
+            <navigator class="li" wx:for="{{item.children}}" wx:key="*this" url="/pages/details/details?id={{item.cat_id}}">
+                <image src="{{item.cat_icon}}"></image>
+                <text>{{item.cat_name}}</text>
+            </navigator>
+            
+        </view>
+    </view>
+</scroll-view>
+

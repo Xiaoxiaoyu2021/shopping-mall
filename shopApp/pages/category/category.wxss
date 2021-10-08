@@ -1,0 +1,76 @@
+/* pages/category/category.wxss */
+/* 左侧分类 */
+.categoryItem{
+    width: 25%;
+    height: 100vh;
+    float: left;
+    background-color: #bee1f4;
+}
+
+.categoryItem .item view{
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+.categoryItem .item view.con{
+    background-color: #fff;
+    color: #4a88a6;
+}
+
+.categoryItem .item view.con::after{
+    content: "";
+    display: block;
+    width: 6rpx;
+    height: 40rpx;
+    background-color: #4a88a6;
+    position: absolute;
+    left: 0rpx;
+    top: 30rpx;
+}
+
+/* 右侧内容 */
+.contentItem{
+    width: 75%;
+    height: 100vh;
+    float: right;
+    background-color: #fff;
+}
+
+.contentItem .content{
+    width: 100%;
+}
+
+.contentItem .content .content2{
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-left: 20rpx;
+    font-size: 40rpx;
+    font-weight: bold;
+    color: #3C3E53;
+}
+
+.contentItem .content .ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentItem .content .ul .li{
+    text-align: center;
+    width: 33.33%;
+    margin-bottom: 20rpx;
+}
+
+.contentItem .content .ul .li text{
+    display: block;
+    font-size: 26rpx;
+}
+.contentItem .content .ul .li image{
+    width: 140rpx;
+    height: 140rpx;
+}
